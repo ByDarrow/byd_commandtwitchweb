@@ -1,0 +1,1 @@
+document.getElementById("url").innerHTML += `Aquí podrás ver todos los comandos disponibles: <a>${window.location.href}</a>`;

@@ -1,0 +1,184 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*=============== COLORS ===============*/
+  --dark-bg-color: rgb(62, 76, 89);
+  --light--bg-color: rgb(251, 251, 253);
+  --dark-font-color: rgb(247, 247, 251);
+  --sub-dark-font-color: rgb(255, 255, 255);
+  --dark-command-box-color: rgb(50, 61, 72);
+  --light-font-color: rgb(62, 76, 89);
+  --sub-light-font-color: rgb(62, 76, 89);
+  --light-command-box: rgb(217, 217, 236);
+  /*=============== Font and Typography ===============*/
+  --body-font: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--dark-bg-color);
+  font-family: var(--body-font);
+  color: var(--dark-font-color);
+}
+
+.profile {
+  background-image: url("../img/banner.png");
+  height: 320px;
+  background-size: 100% 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+.profile img {
+  margin-top: 15%;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+}
+
+.profile a:link {
+  color: var(--dark-font-color);
+  text-decoration: none;
+}
+
+.profile a:visited {
+  color: var(--dark-font-color);
+}
+
+.profile a:hover {
+  color: #bbbbdd;
+  text-decoration: none;
+}
+
+.profile a:active {
+  text-decoration: none;
+}
+
+.commandTitle{
+  color: var(--dark-font-color);
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.activeCommands{
+  color: var(--sub-dark-font-color);
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.grid {
+  margin: 2% 2%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--dark-command-box-color);
+}
+
+.grid > span {
+  padding: 8px 4px;
+}
+
+.grid a:link {
+  color: var(--dark-font-color);
+  text-decoration: none;
+}
+
+.grid a:visited {
+  color: var(--dark-font-color);
+}
+
+.grid a:hover {
+  color: #bbbbdd;
+  text-decoration: none;
+}
+
+.grid a:active {
+  text-decoration: none;
+}
+
+.footer__container {
+  text-align: center;
+  margin-bottom: 0.938rem;
+}
+
+.icons {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.footer__container a{
+  color: var(--dark-font-color);
+}
+
+
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: var(--light-bg-color);
+    font-family: var(--body-font);
+    color: var(--light-font-color);
+  }
+
+  .profile a:link {
+    color: var(--dark-font-color);
+  }
+
+  .profile a:visited {
+    color: var(--dark-font-color);
+  }
+
+  .profile a:hover {
+    color: #bbbbdd;
+    text-decoration: none;
+  }
+
+  .profile a:active {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #bbbbdd;
+    text-decoration: none;
+  }
+
+  .commandTitle{
+    color: var(--light-font-color);
+  }
+
+  .activeCommands{
+    color: var(--sub-light-font-color);
+  }
+
+  .grid {
+    background-color: var(--light-command-box-color);
+  }
+
+  .grid a:link {
+    color: var(--light-font-color);
+    text-decoration: none;
+  }
+
+  .grid a:visited {
+    color: var(--light-font-color);
+  }
+
+  .grid a:hover {
+    color: #bbbbdd;
+    text-decoration: none;
+  }
+
+  .grid a:active {
+    text-decoration: none;
+  }
+
+  .footer__container a{
+    color: var(--dark-bg-color);
+  }
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .profile img {
+    margin-top: 5rem;
+  }
+}

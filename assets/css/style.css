@@ -65,32 +65,50 @@ body {
   margin-left: 2%;
 }
 
-.grid {
+.table-container {
   margin: 2% 2%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1%;
   background-color: var(--dark-command-box-color);
 }
 
-.grid > span {
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--dark-font-color);
+  vertical-align: top;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgb(208,208,208);
+}
+
+.table > span {
   padding: 8px 4px;
 }
 
-.grid a:link {
+.table a:link {
   color: var(--dark-font-color);
   text-decoration: none;
 }
 
-.grid a:visited {
+.table a:visited {
   color: var(--dark-font-color);
 }
 
-.grid a:hover {
-  color: #bbbbdd;
+.table a:hover {
+  color: #7c7c91;
   text-decoration: none;
 }
 
-.grid a:active {
+.table a:active {
   text-decoration: none;
 }
 
@@ -149,25 +167,30 @@ body {
     color: var(--sub-light-font-color);
   }
 
-  .grid {
+  .table-container {
+    margin: 2% 2%;
+    margin-top: 1%;
     background-color: var(--light-command-box-color);
   }
 
-  .grid a:link {
+  .table {
+    color: var(--light-font-color);
+  }
+  .table a:link {
     color: var(--light-font-color);
     text-decoration: none;
   }
 
-  .grid a:visited {
+  .table a:visited {
     color: var(--light-font-color);
   }
 
-  .grid a:hover {
-    color: #bbbbdd;
+  .table a:hover {
+    color: #212529;
     text-decoration: none;
   }
 
-  .grid a:active {
+  .table a:active {
     text-decoration: none;
   }
 

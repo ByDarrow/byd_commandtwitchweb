@@ -1,1 +1,1 @@
-document.getElementById("url").innerHTML += `Aquí podrás ver todos los comandos disponibles: <a>${window.location.href}</a>`;
+document.getElementById("url").innerHTML += `Aquí podrás ver todos los comandos disponibles: <a href="${window.location.href}">${window.location.href}</a>`;
